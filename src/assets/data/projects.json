@@ -1,0 +1,38 @@
+[
+    {
+        "nome": "José William",
+        "subtitulo": "Portfólio Web atleta de basquete",
+        "imagem": "https://i.ibb.co/JjNVZBcs/Jose-William.png",
+        "descricao": "Landing page desenvolvida para o atleta de basquete José William. O objetivo do site é servir como portfólio pessoal e ferramenta de divulgação profissional, apresentando suas habilidades, conquistas e melhores momentos em quadra.",
+        "tecnologias": "HTML, CSS, JavaScript, GSAP, Bootstrap, Lenis.js, Figma",
+        "github": "https://github.com/teuaraujoo/atletaBahia",
+        "deploy": "https://josewilliam.vercel.app/"
+    },
+    {
+        "nome": "Barber Langin Page",
+        "subtitulo": "Página de vendas para barbearia",
+        "imagem": "https://i.ibb.co/5hRcFzKr/Hero.png",
+        "descricao": "Descrição do Projeto 2",
+        "tecnologias": "HTML, CSS, JavaScript, GSAP, Figma",
+        "github": "https://github.com/teuaraujoo/barberLandingPage",
+        "deploy": "https://barber-landing-page-gray.vercel.app/"
+    },
+    {
+        "nome": "Projeto 3",
+        "subtitulo": "mini descrição",
+        "imagem": "",
+        "descricao": "Descrição do Projeto 3",
+        "tecnologias": "HTML, CSS, JavaScript",
+        "github": "https://github.com/laisi/projeto-1",
+        "deploy": "https://vercel.com"
+    },
+    {
+        "nome": "Projeto 4",
+        "subtitulo": "mini descrição",
+        "imagem": "",
+        "descricao": "Descrição do Projeto 4",
+        "tecnologias": "HTML, CSS, JavaScript",
+        "github": "https://github.com/laisi/projeto-1",
+        "deploy": "https://vercel.com"
+    }
+]
