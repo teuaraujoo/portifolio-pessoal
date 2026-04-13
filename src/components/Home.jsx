@@ -14,12 +14,10 @@ export default function Home() {
           <h1>Mateus Araujo</h1>
           <h2>FullStack Developer</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil obcaecati odit alias quam,
-            perspiciatis, repudiandae deserunt doloribus fugiat nam quaerat facilis id illo ea saepe magni
-            libero, similique amet magnam.
+            Desenvolvo soluções digitais completas, desde a interface até o backend, utilizando tecnologias modernas como React, Node.js e JavaScript. Busco sempre unir performance, organização e uma experiência intuitiva para o usuário.
           </p>
         </div>
-        
+
         {/* BOTOES HOME */}
         <div className="home-button">
           <a className="primary-btn" href={cvFile} download="Currículo - Mateus Araujo">
@@ -29,7 +27,7 @@ export default function Home() {
             GitHub
           </a>
         </div>
-        
+
         {/* STACKS CONTAINER */}
         <div className="stacks-container">
           <div className="stacks-track">

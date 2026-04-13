@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -11,6 +11,13 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Projects({ data }) {
   const sectionRef = useRef(null);
   const [openModalId, setOpenModalId] = useState(null);
+
+  useEffect(() => {
+    document.body.classList.toggle('modal-open', openModalId !== null);
+    return () => {
+      document.body.classList.remove('modal-open');
+    };
+  }, [openModalId]);
 
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -37,7 +44,11 @@ export default function Projects({ data }) {
   }, { scope: sectionRef });
 
   return (
-    <div className="section" id="projects" ref={sectionRef}>
+    <div
+      className="section"
+      id="projects"
+      ref={sectionRef}
+    >
       <h1 className="title projects">Projetos feitos e clientes satisfeitos</h1>
       <div className="projects-card-container">
         {data && data.map((project) => (
@@ -47,7 +58,7 @@ export default function Projects({ data }) {
               href="#"
               className="tag-content"
               onClick={(e) => {
-                e.preventDefault(); // Impede de pular ao topo ou navegar
+                e.preventDefault();
                 setOpenModalId(project.id);
               }}
             >
@@ -84,7 +95,7 @@ export default function Projects({ data }) {
             {/* Modal Customizado CSS Vanilla */}
             {openModalId === project.id && (
               <div className="custom-modal-overlay" onClick={(e) => {
-                if(e.target.className === 'custom-modal-overlay') setOpenModalId(null);
+                if (e.target.className === 'custom-modal-overlay') setOpenModalId(null);
               }}>
                 <div className="custom-modal-content">
                   <div className="modal-header">
@@ -93,7 +104,7 @@ export default function Projects({ data }) {
                       &times;
                     </button>
                   </div>
-                  
+
                   <div className="modal-body">
                     {project.videoSrc ? (
                       <div className="video-wrapper">
@@ -105,7 +116,7 @@ export default function Projects({ data }) {
                     ) : (
                       <div className="no-video">Vídeo não disponível</div>
                     )}
-                    <p className="modal-description">{project.details || project.description}</p>
+                    <p className="modal-description">{project.details}</p>
                   </div>
 
                   <div className="modal-footer">

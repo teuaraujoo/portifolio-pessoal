@@ -113,7 +113,7 @@ export default function Services() {
   return (
     <section id="services" className="section services" ref={sectionRef}>
       <div className="services-header">
-        <h1 className="title services">Soluções Digitais Otimizadas</h1>
+        <h1 className="title services">Como posso te ajudar</h1>
       </div>
       <div className="card-container">
         <div className="card" id="card-1">
@@ -122,11 +122,9 @@ export default function Services() {
           </div>
           <div className="card-back">
             <span>( 01 )</span>
-            <p>Aplicações web</p>
+            <p>Sites modernos e profissionais</p>
             <p className="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptatem ab in nemo laudantium nostrum corporis sint accusamus eveniet vero harum sunt
-              cupiditate,
+              Desenvolvimento de sites modernos, rápidos e responsivos, focadas na melhor experiência do usuário que ajudam a fortalecer sua presença online e transmitir mais profissionalismo para o seu negócio.
             </p>
           </div>
         </div>
@@ -137,11 +135,9 @@ export default function Services() {
           </div>
           <div className="card-back">
             <span>( 02 )</span>
-            <p>Interactive Web Expirence</p>
+            <p>Sistemas para otimizar o seu negócio</p>
             <p className="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptatem ab in nemo laudantium nostrum corporis sint accusamus eveniet vero harum sunt
-              cupiditate,
+              Desenvolvo sistemas personalizados que ajudam a organizar operações, automatizar processos e aumentar a eficiência do seu negócio, reduzindo erros e economizando tempo.
             </p>
           </div>
         </div>
@@ -152,11 +148,9 @@ export default function Services() {
           </div>
           <div className="card-back">
             <span>( 03 )</span>
-            <p>Interactive Web Expirence</p>
+            <p>Soluções completas</p>
             <p className="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptatem ab in nemo laudantium nostrum corporis sint accusamus eveniet vero harum sunt
-              cupiditate,
+              Cuido de todo o processo de desenvolvimento, desde a ideia até a aplicação pronta, criando soluções digitais funcionais, intuitivas e preparadas para crescer.
             </p>
           </div>
         </div>

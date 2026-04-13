@@ -61,8 +61,13 @@ export default function Header() {
           <li><a className="ancora" href="#contact">Contato</a></li>
         </ul>
         <div className="header-button">
-          <a href="https://api.whatsapp.com/send/?phone=5579988081797&text&type=phone_number&app_absent=0"
-            className="primary-btn header">Contato</a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5579988081797&text&type=phone_number&app_absent=0"
+            className="primary-btn header"
+            target="_blank"
+          >
+            Contato
+          </a>
         </div>
       </nav>
     </header>

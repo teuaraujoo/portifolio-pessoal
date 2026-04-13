@@ -23,24 +23,24 @@ export default function About() {
       duration: 0.6,
       ease: 'power3.out'
     })
-    .from('.about-title-container p', {
-      x: -40,
-      opacity: 0,
-      duration: 0.6,
-      ease: 'power3.out'
-    }, '-=0.4')
-    .from('.about-text-container h1', {
-      y: 30,
-      opacity: 0,
-      duration: 0.6,
-      ease: 'power3.out'
-    }, '-=0.4')
-    .from('.about-text-container p', {
-      y: 30,
-      opacity: 0,
-      duration: 0.6,
-      ease: 'power3.out'
-    }, '-=0.4');
+      .from('.about-title-container p', {
+        x: -40,
+        opacity: 0,
+        duration: 0.6,
+        ease: 'power3.out'
+      }, '-=0.4')
+      .from('.about-text-container h1', {
+        y: 30,
+        opacity: 0,
+        duration: 0.6,
+        ease: 'power3.out'
+      }, '-=0.4')
+      .from('.about-text-container p', {
+        y: 30,
+        opacity: 0,
+        duration: 0.6,
+        ease: 'power3.out'
+      }, '-=0.4');
   }, { scope: sectionRef });
 
   return (
@@ -53,11 +53,13 @@ export default function About() {
         <div className="about-text-container">
           <h1>Transformando ideais em soluções digitais</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quis tenetur accusamus
-            tempore, adipisci nesciunt? Possimus omnis numquam odio itaque assumenda est libero ipsa officiis ipsam
-            quidem! Necessitatibus, ipsa magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro,
-            quibusdam minima delectus quos possimus exercitationem aut deserunt sit maiores obcaecati iste.
-            Fugiat, nesciunt minima eaque dolorem reprehenderit labore et alias.
+            Meu nome é Mateus Arajo, sou desenvolvedor full stack apaixonado por tecnologia e por transformar ideias em soluções reais.
+
+            Atualmente, estou em constante evolução na área de desenvolvimento, buscando não apenas escrever código, mas criar experiências digitais que realmente façam diferença.
+
+            Tenho experiência com tecnologias como JavaScript, React, Node.js, além de estar sempre explorando novas ferramentas e boas práticas do mercado.
+
+            Meu foco é crescer como desenvolvedor, participar de projetos desafiadores e entregar soluções eficientes, bem estruturadas e com propósito.
           </p>
         </div>
       </div>

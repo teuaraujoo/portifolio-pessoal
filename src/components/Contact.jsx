@@ -33,7 +33,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="section contact" ref={sectionRef}>
-      <h1 className="title contact">Contato</h1>
+      <h1 className="title contact">Contatos</h1>
       <div className="socials-container">
         <a href="mailto:empresarial.mateus25@gmail.com" target="_blank" rel="noreferrer" className="tag-socials">
           <div className="socials">
