@@ -28,7 +28,7 @@ const projectsData = [
       "devicon-vercel-original-wordmark",
     ],
     description: "Desenvolviemnto de um portfólio web desenvolvido para o atleta de basquete sergipano.",
-    details: "Portfólio Web desenvolvido para o atleta de basquete José William. Desenvolvido utilziando HTML, CSS, JavaScript e GSAP. O objetivo do site é servir como portfólio pessoal e ferramenta de divulgação profissional, apresentando suas habilidades, conquistas e melhores momentos em quadra. O design é moderno e responsivo, garantindo uma experiência de usuário fluida em dispositivos móveis e desktops. A estrutura do site inclui seções para biografia, estatísticas, galeria de fotos e vídeos, além de um formulário de contato para oportunidades profissionais."
+    details: "Portfólio Web desenvolvido para o atleta de basquete José William. Desenvolvido utilziando HTML, CSS, JavaScript e GSAP. O objetivo do site é servir como portfólio pessoal e ferramenta de divulgação profissional, apresentando suas habilidades, conquistas e melhores momentos em quadra. O design é moderno e responsivo, garantindo uma experiência de usuário fluida em dispositivos móveis e desktops. A estrutura do site inclui seções para biografia, estatísticas, galeria de fotos e vídeos."
   },
   {
     id: 2,
