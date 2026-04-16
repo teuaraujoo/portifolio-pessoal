@@ -56,11 +56,11 @@ export default function Contact() {
             <p className="subtitle-socials">@teuaraujoo</p>
           </div>
         </a>
-        <a href="https://www.instagram.com/teu.araujoo/" target="_blank" rel="noreferrer" className="tag-socials">
+        <a href="https://wa.me/5579988081797" target="_blank" rel="noreferrer" className="tag-socials">
           <div className="socials">
-            <i className="fa-brands fa-instagram"></i>
-            <p>Instagram</p>
-            <p className="subtitle-socials">@teuraujoo</p>
+            <i className="fa-brands fa-whatsapp"></i>
+            <p>Telefone</p>
+            <p className="subtitle-socials">(79) 98808-1797</p>
           </div>
         </a>
       </div>

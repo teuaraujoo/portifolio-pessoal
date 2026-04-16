@@ -108,7 +108,7 @@ export default function Projects({ data }) {
                   <div className="modal-body">
                     {project.videoSrc ? (
                       <div className="video-wrapper">
-                        <video controls autoPlay>
+                        <video controls autoPlay muted playsInline preload="metadata">
                           <source src={project.videoSrc} type="video/mp4" />
                           Seu navegador não suporta este formato de vídeo.
                         </video>

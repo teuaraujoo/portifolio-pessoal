@@ -11,12 +11,16 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+import atletaPortfolioVideo from './assets/videos/atletaPortfolio.mp4';
+import sistemaEstoqueVideo from './assets/videos/sistemaEstoque.mp4';
+import barbeariaVideo from './assets/videos/barbearia.mp4';
+
 const projectsData = [
   {
     id: 1,
     link: "https://josewilliam.vercel.app/",
     imgSrc: "https://i.ibb.co/JjNVZBcs/Jose-William.png",
-    videoSrc: "https://www.w3schools.com/html/mov_bbb.mp4",
+    videoSrc: atletaPortfolioVideo,
     title: "Portfólio Web Atleta de Basquete",
     icons: [
       "devicon-html5-plain",
@@ -34,7 +38,7 @@ const projectsData = [
     id: 2,
     link: "https://sistema-estoque-one.vercel.app",
     imgSrc: "https://i.ibb.co/whfc3cHp/estoque-Sistema.webp",
-    videoSrc: "https://www.w3schools.com/html/mov_bbb.mp4",
+    videoSrc: sistemaEstoqueVideo,
     title: "Sistema de Gerencaimento de Estoque",
     icons: [
       "devicon-nodejs-plain-wordmark",
@@ -47,13 +51,13 @@ const projectsData = [
       "devicon-railway-original"
     ],
     description: "Desenvolvimento de um sistema completo de gerenciamento de estoque.",
-    details: "Desenvolvimento de um sistema completo de gerenciamento de estoque utilizando Node.js, Express, React e Tailwind CSS. Ale´m de bibliotecas como JWT e Bcrypt para autenticação de usuários. O sistema permite o controle eficiente de produtos, vendas e movimentações de estoque, além de oferecer uma interface intuitiva para os usuários."
+    details: "Desenvolvimento de um sistema completo de gerenciamento de estoque utilizando Node.js, Express, React e Tailwind CSS. Além de bibliotecas como JWT e Bcrypt para autenticação de usuários. O sistema permite o controle eficiente de produtos, vendas e movimentações de estoque, além de oferecer uma interface intuitiva para os usuários."
   },
   {
     id: 3,
     link: "https://barber-landing-page-gray.vercel.app/",
     imgSrc: "https://i.ibb.co/5hRcFzKr/Hero.png",
-    videoSrc: "https://streamable.com/k6nb5v?t=4",
+    videoSrc: barbeariaVideo,
     title: "Landing Page Barbearia",
     icons: [
       "devicon-html5-plain",
@@ -69,19 +73,19 @@ const projectsData = [
   {
     id: 4,
     link: null,
-    imgSrc: null,
+    imgSrc: "https://i.ibb.co/6cHnVtY2/Captura-de-ecr-2026-04-15-225322.png",
     videoSrc: null,
-    title: "Landing Page Atleta de Basquete",
+    title: "Portfolio Mateus Araujo",
     icons: [
-      "devicon-html5-plain",
+      "devicon-react-plain",
       "devicon-css3-plain",
       "devicon-javascript-plain",
+      "custom-svg",
       "devicon-figma-plain",
       "devicon-vercel-original-wordmark",
-      "devicon-bootstrap-plain"
     ],
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptas fugit numquam atque deserunt doloribus obcaecati. Laudantium praesentium expedita vitae repellat, fuga a eaque autem modi molestias veritatis, ipsum officia.",
-    details: "Espaço reservado para vídeo e mais detalhes para expandir o engajamento com seus visitantes. Os modais suportam links adicionais também."
+    description: "Desenvolvimento do meu portfólio pessoal.",
+    details: "Este site é o meu portfólio, desenvolvido com React, GSAP e Lenis para criar animações, rolagem suave e uma experiência de usuário moderna. Inclui home com download de currículo, apresentação de tecnologias, seção de serviços animada, apresentação sobre o desenvolvedor, projeto em cards com modal de detalhes e contatos com links diretos para email, LinkedIn, GitHub e WhatsApp."
   }
 ];
 

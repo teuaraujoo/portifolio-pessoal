@@ -113,7 +113,7 @@ export default function Services() {
   return (
     <section id="services" className="section services" ref={sectionRef}>
       <div className="services-header">
-        <h1 className="title services">Como posso te ajudar</h1>
+        <h1 className="title services">Como posso te ajudar?</h1>
       </div>
       <div className="card-container">
         <div className="card" id="card-1">
