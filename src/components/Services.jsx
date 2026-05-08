@@ -13,6 +13,7 @@ export default function Services() {
   const sectionRef = useRef(null);
 
   useGSAP(() => {
+    
     let isGapAnimationCompleted = false;
     let isFlipAnimationCompleted = false;
 

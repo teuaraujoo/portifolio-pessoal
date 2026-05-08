@@ -2,12 +2,13 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import cvFile from '../assets/data/Currículo - Mateus AraujoAtt.pdf?url';
+import cvFile from '../assets/data/Currículo - Mateus Araujo PT-BR.pdf?url';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Contact() {
   const sectionRef = useRef(null);
+
 
   useGSAP(() => {
     if (window.innerWidth < 1000) {
@@ -79,15 +80,16 @@ export default function Contact() {
           </div>
         </a>
         <a
-        download="Currículo - Mateus Araujo"
+          download="Currículo - Mateus Araujo"
           href={cvFile}
           target="_blank"
           rel="noreferrer"
-          className="tag-socials">
+          className="tag-socials"
+        >
           <div className="socials">
             <i className="fa-solid fa-file"></i>
-            <p>Curriculo</p>
-            <p className="subtitle-socials">Baixar documento</p>
+            <p>Currículo</p>
+            <p className="subtitle-socials">Baixar currículo</p>
           </div>
         </a>
       </div>

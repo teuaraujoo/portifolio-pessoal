@@ -65,7 +65,6 @@ export default function Projects({ data }) {
       <div className="section-ambient section-ambient-projects" />
 
       <div className="projects-heading">
-        <span className="section-label">Projetos</span>
         <h1 className="title projects">Projetos feitos, clientes satisfeitos</h1>
         <p>Soluções sob medida.
           Veja como transformo ideias em presença digital <br /> de verdade.</p>

@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState} from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -19,18 +19,19 @@ function LogoMark() {
 
 export default function Header() {
   const navbarRef = useRef(null);
-  const menuToggleRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const closeMenu = () => {
-    if (menuToggleRef.current) {
-      menuToggleRef.current.checked = false;
-    }
+    setIsMenuOpen(false);
   };
 
+
+
   useGSAP(() => {
+
     if (window.innerWidth < 1000) {
       return undefined;
-    }
+    };
 
     gsap.fromTo(
       navbarRef.current,
@@ -43,12 +44,12 @@ export default function Header() {
         opacity: 1,
         duration: 0.9,
         ease: 'power3.out',
-        delay: 2,
+        delay: 1.5,
       },
     );
 
     gsap.to(navbarRef.current, {
-      background: 'rgba(12, 12, 16, 0.78)',
+      background: 'rgba(19, 18, 18, 0.78)',
       padding: '16px 24px',
       gap: 70,
       borderRadius: '24px',
@@ -76,13 +77,16 @@ export default function Header() {
   return (
     <header>
       <div className="logo-mobile">
-        <a href="#home" aria-label="Ir para o topo" onClick={closeMenu}>
-          <LogoMark />
+        <a href="#home" onClick={closeMenu}>
+          <svg width="30" height="30" viewBox="0 0 268 239" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.26953 235.427L89.5322 9.42664L135.981 117.995M3.26953 235.427L135.981 64.8188L264.27 235.427M3.26953 235.427L135.981 117.995M135.981 117.995L184.642 9.42664L264.27 235.427M135.981 117.995L264.27 235.427"
+              stroke="white" strokeWidth="7" />
+          </svg>
         </a>
       </div>
-
-      <input type="checkbox" id="menu-toggle" ref={menuToggleRef} />
-      <label htmlFor="menu-toggle" className="hamburger" aria-label="Abrir menu">
+      <input type="checkbox" id="menu-toggle" checked={isMenuOpen} onChange={() => setIsMenuOpen(!isMenuOpen)} />
+      <label htmlFor="menu-toggle" className="hamburger">
         <span></span>
         <span></span>
         <span></span>
@@ -108,7 +112,6 @@ export default function Header() {
             href="https://api.whatsapp.com/send/?phone=5579988081797&text&type=phone_number&app_absent=0"
             className="primary-btn header"
             target="_blank"
-            rel="noreferrer"
             onClick={closeMenu}
           >
             Contato
