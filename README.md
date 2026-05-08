@@ -8,7 +8,7 @@
 
 Portfólio pessoal desenvolvido para apresentar minha trajetória, habilidades e projetos como desenvolvedor Full Stack.
 
-Acesse nesse [link]()
+Acesse nesse [link](https://portifolio-pessoal-rose-iota.vercel.app/)
 
 ## Tecnologias Usadas
 

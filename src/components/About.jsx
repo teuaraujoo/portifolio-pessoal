@@ -51,6 +51,7 @@ export default function About() {
 
       <div className="about-container">
         <div className="about-title-container">
+          <span className="section-label">Sobre</span>
           <h1 className="title">Sobre mim</h1>
           <p>um pouco da minha trajetória</p>
         </div>
