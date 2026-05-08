@@ -1,0 +1,370 @@
+Desenvolva uma atualização visual premium para o portfolio atual, preservando sua estrutura principal, identidade visual, organização das seções, paleta de cores e proposta minimalista tecnológica.
+
+O objetivo NÃO é criar um novo portfolio do zero.
+O objetivo é elevar drasticamente:
+
+qualidade visual
+motion design
+impacto inicial
+profundidade
+fluidez
+sensação premium
+experiência cinematográfica
+
+A aplicação já utiliza React e continuará utilizando React.
+
+NÃO alterar:
+
+estrutura principal das seções
+identidade do portfolio
+conteúdo principal
+proposta visual dark futurista
+paleta de cores existente
+
+As alterações devem focar em:
+
+redesign refinado da interface
+motion design cinematográfico
+animações premium
+melhorias de ambientação
+profundidade visual
+experiência mais moderna e sofisticada
+
+O resultado deve parecer:
+
+portfolio high-end de engenheiro de software
+produto de startup premium
+experiência visual cinematográfica
+interface moderna de IA/tecnologia
+
+Evitar:
+
+excesso de neon
+visual gamer
+cyberpunk exagerado
+animações caricatas
+poluição visual
+excesso de efeitos simultâneos
+
+Toda a experiência deve ser:
+
+elegante
+fluida
+refinada
+minimalista
+tecnológica
+sofisticada
+Hero Section
+
+A hero section deve receber melhorias significativas em:
+
+profundidade
+ambientação
+motion
+iluminação
+impacto visual inicial
+
+Adicionar:
+
+background mais cinematográfico
+grid futurista sofisticado
+glow difuso suave
+blur layers
+ambient lighting
+partículas leves e elegantes
+sensação de profundidade multicamada
+
+O fundo deve transmitir:
+
+IA
+tecnologia premium
+engenharia moderna
+cinematic UI
+
+Evitar fundos:
+
+vazios
+estáticos
+simples demais
+
+O background deve reagir levemente:
+
+ao scroll
+ao mouse
+ao movimento da página
+Motion Typography
+
+Melhorar totalmente as animações de entrada da tipografia.
+
+Aplicar:
+
+stagger refinado
+reveals cinematográficos
+blur-to-focus
+letter animations
+translateY suaves
+pequenos movimentos 3D
+fade transitions sofisticadas
+
+O texto principal deve transmitir:
+
+imponência
+sofisticação
+experiência premium
+
+As animações devem parecer naturais e extremamente refinadas.
+
+Preloader Premium
+
+Criar um preloader moderno e cinematográfico.
+
+O preloader deve:
+
+possuir animação fluida
+transmitir tecnologia premium
+possuir acabamento sofisticado
+preparar visualmente a experiência do portfolio
+
+Possíveis elementos:
+
+orb holográfica
+linhas energéticas
+grid futurista
+loading tipográfico sofisticado
+partículas suaves
+glow animado
+
+A saída do preloader deve ser:
+
+extremamente suave
+cinematográfica
+integrada ao reveal da hero section
+
+A transição entre:
+preloader → hero
+deve parecer uma única experiência contínua.
+
+Evitar:
+
+loaders genéricos
+spinners simples
+animações comuns
+Motion Design Global
+
+Melhorar completamente o motion design do portfolio.
+
+Aplicar:
+
+transições cinematográficas
+smooth section reveals
+parallax refinado
+depth animations
+stagger systems
+floating motions sutis
+easing premium
+timing sofisticado
+
+Toda animação deve:
+
+possuir propósito
+reforçar a sensação premium
+melhorar percepção de qualidade
+
+O motion deve lembrar:
+
+interfaces high-end
+startups modernas de IA
+experiências digitais premium
+Scroll Experience
+
+Melhorar a sensação do scroll da aplicação.
+
+O scroll deve parecer:
+
+extremamente fluido
+suave
+cinematográfico
+moderno
+
+Adicionar:
+
+depth scrolling
+layered parallax
+reveal progressions
+motion continuity
+
+As seções devem se conectar visualmente de maneira natural.
+
+Evitar:
+
+cortes secos
+entradas abruptas
+animações repetitivas
+Seção Sobre
+
+Melhorar:
+
+aparência dos cards
+profundidade visual
+interações
+iluminação
+motion
+
+Aplicar:
+
+glassmorphism refinado
+glow sutil
+hover premium
+leve movimentação baseada no cursor
+sombras dinâmicas
+floating animations discretas
+
+As animações de entrada devem ser:
+
+suaves
+sofisticadas
+cinematográficas
+Seção de Skills
+
+Melhorar:
+
+organização visual
+ambientação tecnológica
+motion dos ícones
+profundidade
+
+Adicionar:
+
+stagger reveals
+glow responsivo
+floating suave
+microinterações refinadas
+iluminação contextual
+
+A seção deve parecer:
+
+moderna
+tecnológica
+premium
+
+Sem exageros visuais.
+
+Seção de Projetos
+
+Os projetos devem parecer:
+
+painéis premium
+showcases high-end
+interfaces tecnológicas sofisticadas
+
+Melhorar:
+
+hover states
+iluminação
+profundidade
+entrada dos cards
+motion interno
+
+Adicionar:
+
+blur reveals
+translateZ
+reflections suaves
+hover cinematográfico
+iluminação dinâmica
+sensação holográfica sutil
+
+As animações devem valorizar os projetos sem distrair do conteúdo.
+
+Seção de Contato
+
+Transformar a seção final em um encerramento premium.
+
+Adicionar:
+
+ambient glow
+iluminação suave
+partículas leves
+motion refinado
+CTA impactante porém elegante
+
+A sensação final deve transmitir:
+
+sofisticação
+tecnologia
+acabamento premium
+Inspira UI
+
+Utilizar componentes e conceitos visuais inspirados na Inspira UI para:
+
+motion refinado
+ambient effects
+glowing elements
+premium interactions
+futuristic UI patterns
+modern reveal systems
+cinematic visual effects
+
+Aplicar a linguagem visual da Inspira UI de forma:
+
+elegante
+minimalista
+integrada ao portfolio atual
+
+Sem transformar a aplicação em um template genérico.
+
+Microinterações
+
+Adicionar microinterações sofisticadas em:
+
+botões
+links
+cards
+ícones
+navegação
+
+Aplicar:
+
+hover glow
+smooth transitions
+depth reactions
+cursor interactions
+iluminação contextual
+
+Tudo deve ser:
+
+sutil
+refinado
+premium
+Performance
+
+Apesar das melhorias visuais:
+
+manter excelente performance
+evitar animações pesadas
+evitar excesso de partículas
+evitar renderizações desnecessárias
+
+As animações devem continuar:
+
+suaves
+responsivas
+performáticas
+Resultado Final Esperado
+
+O resultado final deve parecer:
+
+uma evolução premium do portfolio atual
+uma experiência cinematográfica moderna
+um portfolio high-end de engenharia de software
+uma interface sofisticada de startup tecnológica
+
+A experiência deve impressionar imediatamente através de:
+
+motion design
+fluidez
+profundidade
+iluminação
+ambientação
+animações premium
+acabamento visual refinado.

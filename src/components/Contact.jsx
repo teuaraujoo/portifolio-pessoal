@@ -12,28 +12,36 @@ export default function Contact() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 70%',
-        toggleActions: 'play none none none'
-      }
+        start: 'top 74%',
+        toggleActions: 'play none none none',
+      },
     });
 
-    tl.from('.title.contact', {
-      y: -40,
+    tl.from('.contact-heading > *', {
+      y: 24,
       opacity: 0,
-      duration: 0.8,
-      ease: 'power3.out'
+      duration: 0.7,
+      stagger: 0.1,
+      ease: 'power3.out',
     }).from('.tag-socials', {
-      y: 50,
+      y: 42,
       opacity: 0,
-      duration: 0.8,
-      stagger: 0.2,
-      ease: 'power3.out'
-    }, '-=0.4');
+      duration: 0.75,
+      stagger: 0.14,
+      ease: 'power3.out',
+    }, '-=0.35');
   }, { scope: sectionRef });
 
   return (
     <section id="contact" className="section contact" ref={sectionRef}>
-      <h1 className="title contact">Contatos</h1>
+      <div className="section-ambient section-ambient-contact" />
+
+      <div className="contact-heading">
+        <span className="section-label">Contato</span>
+        <h1 className="title contact">Contatos</h1>
+        <p>Vamos transformar uma ideia em uma experiência digital clara, moderna e bem construída.</p>
+      </div>
+
       <div className="socials-container">
         <a href="mailto:empresarial.mateus25@gmail.com" target="_blank" rel="noreferrer" className="tag-socials">
           <div className="socials">
