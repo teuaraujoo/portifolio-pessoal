@@ -10,6 +10,10 @@ export default function Contact() {
   const sectionRef = useRef(null);
 
   useGSAP(() => {
+    if (window.innerWidth < 1000) {
+      return undefined;
+    }
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
@@ -31,6 +35,8 @@ export default function Contact() {
       stagger: 0.14,
       ease: 'power3.out',
     }, '-=0.35');
+
+    return () => tl.kill();
   }, { scope: sectionRef });
 
   return (
@@ -79,7 +85,7 @@ export default function Contact() {
           rel="noreferrer"
           className="tag-socials">
           <div className="socials">
-            <i class="fa-solid fa-file"></i>
+            <i className="fa-solid fa-file"></i>
             <p>Curriculo</p>
             <p className="subtitle-socials">Baixar documento</p>
           </div>

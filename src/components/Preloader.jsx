@@ -22,6 +22,16 @@ export default function Preloader() {
       return undefined;
     }
 
+    if (window.innerWidth < 1000) {
+      setProgress(100);
+      const timeoutId = window.setTimeout(() => {
+        document.body.classList.add('preloader-complete');
+        preloader.style.display = 'none';
+      }, 250);
+
+      return () => window.clearTimeout(timeoutId);
+    }
+
     const totalLength = path.getTotalLength();
 
     gsap.set(path, {

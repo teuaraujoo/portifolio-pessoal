@@ -18,40 +18,6 @@ export default function Services() {
 
     const mm = gsap.matchMedia();
 
-    mm.add('(max-width: 999px)', () => {
-      gsap.set('.card, .card-container, .services-header .title, .section-label', { clearProps: 'all' });
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 82%',
-          toggleActions: 'play none none none',
-        },
-      });
-
-      tl.from('.services-header .section-label', {
-        y: 18,
-        opacity: 0,
-        duration: 0.55,
-        ease: 'power3.out',
-      })
-        .from('.services-header h1', {
-          y: 30,
-          opacity: 0,
-          duration: 0.75,
-          ease: 'power3.out',
-        }, '-=0.35')
-        .from('.card', {
-          y: 36,
-          opacity: 0,
-          duration: 0.75,
-          stagger: 0.18,
-          ease: 'power3.out',
-        }, '-=0.35');
-
-      return () => tl.kill();
-    });
-
     mm.add('(min-width: 1000px)', () => {
       ScrollTrigger.create({
         trigger: sectionRef.current,

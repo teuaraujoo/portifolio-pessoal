@@ -9,6 +9,10 @@ export default function About() {
   const sectionRef = useRef(null);
 
   useGSAP(() => {
+    if (window.innerWidth < 1000) {
+      return undefined;
+    }
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
@@ -37,6 +41,8 @@ export default function About() {
         stagger: 0.15,
         ease: 'power3.out',
       }, '-=0.45');
+
+    return () => tl.kill();
   }, { scope: sectionRef });
 
   return (

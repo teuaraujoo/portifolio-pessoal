@@ -199,11 +199,6 @@ body.modal-open .cursor-outline {
     color: var(--secondary-color);
 }
 
-.title.services {
-        will-change: transform, opacity;
-        transform: translateY(40px);
-    }
-
 ::-webkit-scrollbar-track {
     background-color: rgba(61, 61, 61, 0.25);
 }
@@ -656,11 +651,9 @@ header {
 
 .split-char {
     display: inline-block;
-    opacity: 0;
-    transform: translateY(42px) rotateX(-60deg);
-    transform-origin: 50% 100%;
-    filter: blur(10px);
-    will-change: transform, opacity, filter;
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
 }
 
 .split-char.space {
@@ -1434,6 +1427,16 @@ header {
 
     .about-panel {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .split-char {
+        opacity: 0;
+        transform: translateY(42px) rotateX(-60deg);
+        transform-origin: 50% 100%;
+        filter: blur(10px);
+        will-change: transform, opacity, filter;
     }
 }
 

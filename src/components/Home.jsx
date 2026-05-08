@@ -47,60 +47,61 @@ export default function Home() {
   const sectionRef = useRef(null);
 
   useGSAP(() => {
-    const tl = gsap.timeline({ delay: 1.05 });
+    const mm = gsap.matchMedia();
 
-    tl.to('.home-split .split-char', {
-      opacity: 1,
-      y: 0,
-      rotationX: 0,
-      filter: 'blur(0px)',
-      duration: 1.2,
-      stagger: 0.025,
-      ease: 'power3.out',
-    })
-      .from('.hero-kicker', {
-        opacity: 0,
-        x: -24,
-        filter: 'blur(5px)',
-        duration: 0.9,
+    mm.add('(min-width: 1000px)', () => {
+      const tl = gsap.timeline({ delay: 1.05 });
+
+      tl.to('.home-split .split-char', {
+        opacity: 1,
+        y: 0,
+        rotationX: 0,
+        filter: 'blur(0px)',
+        duration: 1.2,
+        stagger: 0.025,
         ease: 'power3.out',
-      }, '-=1')
-      .from('h1', {
-        opacity: 0,
-        y: 24,
-        filter: 'blur(5px)',
-        duration: 0.9,
-        ease: 'power3.out',
-      }, '-=1')
-      .from('.hero-description', {
-        opacity: 0,
-        y: 24,
-        filter: 'blur(10px)',
-        duration: 0.9,
-        ease: 'power3.out',
-      }, '-=0.55')
-      .from('.home-button .primary-btn', {
-        opacity: 0,
-        y: 18,
-        duration: 0.7,
-        stagger: 0.1,
-        ease: 'power3.out',
-      }, '-=0.5')
-      .from('.hero-side-panel', {
-        opacity: 0,
-        x: 18,
-        duration: 0.7,
-        stagger: 0.1,
-        ease: 'power3.out',
-      }, '-=0.5')
-      .from('.stacks-shell', {
-        opacity: 0,
-        y: 24,
-        filter: 'blur(10px)',
-        duration: 0.9,
-        ease: 'power3.out',
-      }, '-=0.75')
-  }, { scope: sectionRef })
+      })
+        .from('.hero-kicker', {
+          opacity: 0,
+          x: -24,
+          filter: 'blur(5px)',
+          duration: 0.9,
+          ease: 'power3.out',
+        }, '-=1')
+        .from('.hero-description', {
+          opacity: 0,
+          y: 24,
+          filter: 'blur(10px)',
+          duration: 0.9,
+          ease: 'power3.out',
+        }, '-=0.55')
+        .from('.home-button .primary-btn', {
+          opacity: 0,
+          y: 18,
+          duration: 0.7,
+          stagger: 0.1,
+          ease: 'power3.out',
+        }, '-=0.5')
+        .from('.hero-side-panel > *', {
+          opacity: 0,
+          x: 18,
+          duration: 0.7,
+          stagger: 0.1,
+          ease: 'power3.out',
+        }, '-=0.5')
+        .from('.stacks-shell', {
+          opacity: 0,
+          y: 24,
+          filter: 'blur(10px)',
+          duration: 0.9,
+          ease: 'power3.out',
+        }, '-=0.75');
+
+      return () => tl.kill();
+    });
+
+    return () => mm.revert();
+  }, { scope: sectionRef });
 
 
   return (

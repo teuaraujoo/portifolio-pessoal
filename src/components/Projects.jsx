@@ -31,6 +31,10 @@ export default function Projects({ data }) {
   }, [openModalId]);
 
   useGSAP(() => {
+    if (window.innerWidth < 1000) {
+      return undefined;
+    }
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
@@ -52,6 +56,8 @@ export default function Projects({ data }) {
       stagger: 0.16,
       ease: 'power3.out',
     }, '-=0.35');
+
+    return () => tl.kill();
   }, { scope: sectionRef });
 
   return (

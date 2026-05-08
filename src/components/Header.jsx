@@ -28,6 +28,10 @@ export default function Header() {
   };
 
   useGSAP(() => {
+    if (window.innerWidth < 1000) {
+      return undefined;
+    }
+
     gsap.fromTo(
       navbarRef.current,
       {
@@ -59,6 +63,14 @@ export default function Header() {
         scrub: true,
       },
     });
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => {
+        if (trigger.trigger === document.querySelector('.home-wrapper')) {
+          trigger.kill();
+        }
+      });
+    };
   });
 
   return (
