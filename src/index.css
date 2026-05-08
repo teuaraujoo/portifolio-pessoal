@@ -1172,9 +1172,9 @@ header {
 }
 
 .socials-container {
-    width: min(1180px, 100%);
+    width: min(1280px, 100%);
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 1rem;
 }
 
@@ -1210,6 +1210,11 @@ header {
     color: var(--text-muted);
     font-size: 0.5rem;
     font-family: var(--tertiary-font);
+}
+
+.subtitle-socials.email {
+    font-size: 0.7rem;
+    transform: scale(1.05);
 }
 
 .socials:hover {

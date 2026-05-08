@@ -2,8 +2,6 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
-import cvFile from '../assets/data/Currículo - Mateus Araujo.docx?url';
-
 const stackItems = [
   ['devicon-git-plain', 'Git'],
   ['devicon-html5-plain', 'HTML'],
@@ -142,11 +140,15 @@ export default function Home() {
           </div>
 
           <div className="home-button">
-            <a className="primary-btn" href={cvFile} download="Curriculo - Mateus Araujo">
-              Download CV
+            <a
+              className="primary-btn"
+              href="https://wa.me/5579988081797?text=Ol%C3%A1%2C%20Mateus%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
+              target='_blank'
+            >
+              Orçamento
             </a>
-            <a className="primary-btn outline" href="https://github.com/teuaraujoo" target="_blank" rel="noreferrer">
-              GitHub
+            <a className="primary-btn outline" href="#projects">
+              Projetos
             </a>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import cvFile from '../assets/data/Currículo - Mateus AraujoAtt.pdf?url';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,7 +48,7 @@ export default function Contact() {
           <div className="socials">
             <i className="fa-solid fa-envelope"></i>
             <p>Email</p>
-            <p className="subtitle-socials">empresarial.mateus25@gmail.com</p>
+            <p className="subtitle-socials email">empresarial.mateus25@gmail.com</p>
           </div>
         </a>
         <a href="https://www.linkedin.com/in/teuaraujoo/" target="_blank" rel="noreferrer" className="tag-socials">
@@ -69,6 +70,18 @@ export default function Contact() {
             <i className="fa-brands fa-whatsapp"></i>
             <p>Telefone</p>
             <p className="subtitle-socials">(79) 98808-1797</p>
+          </div>
+        </a>
+        <a
+        download="Currículo - Mateus Araujo"
+          href={cvFile}
+          target="_blank"
+          rel="noreferrer"
+          className="tag-socials">
+          <div className="socials">
+            <i class="fa-solid fa-file"></i>
+            <p>Curriculo</p>
+            <p className="subtitle-socials">Baixar documento</p>
           </div>
         </a>
       </div>
