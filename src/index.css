@@ -24,6 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -1362,6 +1363,15 @@ header {
         display: none;
     }
 
+    .hero-panel-card::before,
+    .projects-card::before,
+    .socials::before,
+    .about-panel::before,
+    .stacks-shell::before,
+    .project-card-reflection {
+        display: none;
+    }
+
     .section {
         min-height: auto;
         padding: 4.5rem 1.4rem;
@@ -1413,6 +1423,13 @@ header {
 
     .projects-card-container {
         grid-template-columns: 1fr;
+    }
+
+    .projects-card:hover,
+    .projects-card:hover .img-card,
+    .socials:hover,
+    .primary-btn:hover {
+        transform: none;
     }
 
     .about-panel {

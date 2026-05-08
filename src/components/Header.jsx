@@ -19,7 +19,14 @@ function LogoMark() {
 
 export default function Header() {
   const navbarRef = useRef(null);
-    
+  const menuToggleRef = useRef(null);
+
+  const closeMenu = () => {
+    if (menuToggleRef.current) {
+      menuToggleRef.current.checked = false;
+    }
+  };
+
   useGSAP(() => {
     gsap.fromTo(
       navbarRef.current,
@@ -53,16 +60,16 @@ export default function Header() {
       },
     });
   });
-  
+
   return (
     <header>
       <div className="logo-mobile">
-        <a href="#home" aria-label="Ir para o topo">
+        <a href="#home" aria-label="Ir para o topo" onClick={closeMenu}>
           <LogoMark />
         </a>
       </div>
 
-      <input type="checkbox" id="menu-toggle" />
+      <input type="checkbox" id="menu-toggle" ref={menuToggleRef} />
       <label htmlFor="menu-toggle" className="hamburger" aria-label="Abrir menu">
         <span></span>
         <span></span>
@@ -71,17 +78,17 @@ export default function Header() {
 
       <nav className="navbar" ref={navbarRef}>
         <div className="logo">
-          <a href="#home" aria-label="Ir para o topo">
+          <a href="#home" aria-label="Ir para o topo" onClick={closeMenu}>
             <LogoMark />
           </a>
         </div>
 
         <ul>
-          <li><a className="ancora" href="#home">Home</a></li>
-          <li><a className="ancora" href="#services">Serviços</a></li>
-          <li><a className="ancora" href="#projects">Projetos</a></li>
-          <li><a className="ancora" href="#about">Sobre</a></li>
-          <li><a className="ancora" href="#contact">Contato</a></li>
+          <li><a className="ancora" href="#home" onClick={closeMenu}>Home</a></li>
+          <li><a className="ancora" href="#services" onClick={closeMenu}>Serviços</a></li>
+          <li><a className="ancora" href="#projects" onClick={closeMenu}>Projetos</a></li>
+          <li><a className="ancora" href="#about" onClick={closeMenu}>Sobre</a></li>
+          <li><a className="ancora" href="#contact" onClick={closeMenu}>Contato</a></li>
         </ul>
 
         <div className="header-button">
@@ -90,6 +97,7 @@ export default function Header() {
             className="primary-btn header"
             target="_blank"
             rel="noreferrer"
+            onClick={closeMenu}
           >
             Contato
           </a>
