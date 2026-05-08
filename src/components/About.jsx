@@ -9,58 +9,82 @@ export default function About() {
   const sectionRef = useRef(null);
 
   useGSAP(() => {
+    if (window.innerWidth < 1000) {
+      return undefined;
+    }
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 70%',
-        toggleActions: 'play none none none'
-      }
+        start: 'top 72%',
+        toggleActions: 'play none none none',
+      },
     });
 
-    tl.from('.about-title-container .title', {
-      x: -40,
+    tl.from('.about-title-container > *', {
+      x: -36,
       opacity: 0,
-      duration: 0.6,
-      ease: 'power3.out'
+      duration: 0.7,
+      stagger: 0.12,
+      ease: 'power3.out',
     })
-      .from('.about-title-container p', {
-        x: -40,
+      .from('.about-panel', {
+        y: 36,
         opacity: 0,
-        duration: 0.6,
-        ease: 'power3.out'
+        duration: 0.8,
+        ease: 'power3.out',
       }, '-=0.4')
-      .from('.about-text-container h1', {
-        y: 30,
+      .from('.about-highlight', {
+        y: 24,
         opacity: 0,
         duration: 0.6,
-        ease: 'power3.out'
-      }, '-=0.4')
-      .from('.about-text-container p', {
-        y: 30,
-        opacity: 0,
-        duration: 0.6,
-        ease: 'power3.out'
-      }, '-=0.4');
+        stagger: 0.15,
+        ease: 'power3.out',
+      }, '-=0.45');
+
+    return () => tl.kill();
   }, { scope: sectionRef });
 
   return (
     <section id="about" className="section about" ref={sectionRef}>
+      <div className="section-ambient section-ambient-about" />
+
       <div className="about-container">
         <div className="about-title-container">
           <h1 className="title">Sobre mim</h1>
           <p>um pouco da minha trajetória</p>
         </div>
-        <div className="about-text-container">
-          <h1>Transformando ideais em soluções digitais</h1>
-          <p>
-            Meu nome é Mateus Arajo, sou desenvolvedor full stack apaixonado por tecnologia e por transformar ideias em soluções reais.
 
-            Atualmente, estou em constante evolução na área de desenvolvimento, buscando não apenas escrever código, mas criar experiências digitais que realmente façam diferença.
+        <div className="about-panel">
+          <div className="about-text-container">
+            <h1>Transformando ideias em soluções digitais</h1>
+            <p>
+              Meu nome é Mateus Araujo, sou desenvolvedor full stack apaixonado por tecnologia e por diferentes tipos de soluções digitais.
+              <br />
+              <br />
+              Não escrevo apenas código, meu objetivo é desenvolver experiências digitais que realmente façam diferença para seu negócio.
+              <br />
+              <br />
+              Do design ao produto final, cuido de cada etapa do desenvolvimento para que sua presença online seja mais forte, mais estratégica e mais eficiente.
+              <br />
+              <br />
+            </p>
+          </div>
 
-            Tenho experiência com tecnologias como JavaScript, React, Node.js, além de estar sempre explorando novas ferramentas e boas práticas do mercado.
-
-            Meu foco é crescer como desenvolvedor, participar de projetos desafiadores e entregar soluções eficientes, bem estruturadas e com propósito.
-          </p>
+          <div className="about-highlights">
+            <div className="about-highlight">
+              <span>01</span>
+              <strong>Interfaces com clareza visual</strong>
+            </div>
+            <div className="about-highlight">
+              <span>02</span>
+              <strong>Backend sólido e organizado</strong>
+            </div>
+            <div className="about-highlight">
+              <span>03</span>
+              <strong>Experiência moderna e performática</strong>
+            </div>
+          </div>
         </div>
       </div>
     </section>

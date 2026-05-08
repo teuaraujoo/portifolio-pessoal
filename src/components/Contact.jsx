@@ -2,13 +2,19 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import cvFile from '../assets/data/Currículo - Mateus Araujo PT-BR.pdf?url';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Contact() {
   const sectionRef = useRef(null);
 
+
   useGSAP(() => {
+    if (window.innerWidth < 1000) {
+      return undefined;
+    }
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
@@ -61,6 +67,19 @@ export default function Contact() {
             <i className="fa-brands fa-whatsapp"></i>
             <p>Telefone</p>
             <p className="subtitle-socials">(79) 98808-1797</p>
+          </div>
+        </a>
+        <a
+          download="Currículo - Mateus Araujo"
+          href={cvFile}
+          target="_blank"
+          rel="noreferrer"
+          className="tag-socials"
+        >
+          <div className="socials">
+            <i className="fa-solid fa-file"></i>
+            <p>Currículo</p>
+            <p className="subtitle-socials">Baixar currículo</p>
           </div>
         </a>
       </div>

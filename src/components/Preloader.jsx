@@ -5,7 +5,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 export default function Preloader() {
+
   const pathRef = useRef(null);
   const preloaderRef = useRef(null);
 
